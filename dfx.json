@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "NCA_backend": {
+      "main": "src/NCA_backend/main.mo",
+      "type": "motoko"
+    },
+    "NCA_frontend": {
+      "dependencies": [
+        "NCA_backend"
+      ],
+      "source": [
+        "src/NCA_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "NCA_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
