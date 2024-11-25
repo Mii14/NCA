@@ -17,6 +17,7 @@ import LogRegInput from './component/LogRegInput';
 import Supported from './component/Supported';
 import Logout from './component/Logout';
 import '../index.css';
+import {Navigate} from 'react-router-dom'
 
 // Define routes for the app
 const routes = [
@@ -51,37 +52,22 @@ const routes = [
 ];
 
 function App() {
-  const [scrolled, setScrolled] = useState(false);
-
-  // Scroll event handler to toggle header styles
-  const handleScroll = (event) => {
-    const scrollY = event.target.scrollTop;
-    setScrolled(scrollY > 0);
-  };
-
-  // Set up scroll event listener
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   const queryClient = new QueryClient();
 
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <BrowserRouter basename="/">
-          <main id="mainapp" onScrollCapture={handleScroll}>
-            {/* Place your Navbar here, passing scrolled state */}
-            <Header isScrolled={scrolled} />
+        <BrowserRouter>
+          <main id="mainapp">
+            {/* Place your Navbar here */}
+            {/* <Header /> */}
             <Routes>
+              <Route path="/" element = {<Navigate to="/NCA" />} />
               {routes.map((route, index) => (
                 <Route key={index} path={route.path} element={route.element} />
               ))}
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
           </main>
         </BrowserRouter>
       </AuthProvider>

@@ -6,7 +6,8 @@ function HomeCard(props){
     let imgUrl = props.imgUrl;
 
     if(imgUrl !== "#"){
-        imgUrl = `/NCA/${props.imgUrl}`;
+        // imgUrl = `../../../NCA_frontend/public/${props.imgUrl}`;
+        imgUrl = `/NCA/src/NCA_frontend/public/${props.imgUrl}`;
     }
 
     return(
