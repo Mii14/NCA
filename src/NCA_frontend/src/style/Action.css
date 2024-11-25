@@ -1,0 +1,105 @@
+/* Action Card */
+.card-container{
+    width: 40%;
+    background-color: aqua;
+    height: 150px;
+    border-radius: 40px;
+    padding: 1.1em;
+    cursor: pointer;
+    padding-top: 0;
+}
+
+.card-non-active{
+    display: flex;
+    flex-direction: row;
+    padding-left: 1.5em;
+}
+
+.card-left{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.6em;
+}
+
+.card-right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-right img{
+    object-fit: contain;
+    height: 90%;
+    width: 90%;
+}
+
+.card-active{
+    cursor:default;
+}
+
+.card-progress{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -0.5em;
+}
+
+.card-img-wrapper{
+    width: 10%;
+    margin-top: -1em;
+    margin-left: -1.3em;
+}
+
+.card-img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-progress-bar-outside{
+    width: 100%;
+    height: 12%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card-progress-bar{
+    height: 100%;
+    border-radius: 10px;
+    background-color: #4350FF;
+}
+
+.card-progress-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-progress-bottom{
+    width: 100%;
+    height: 50px;
+}
+
+.card-progress-desc{
+    font-size: 0.5em;
+}
+
+.card-progress-information{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: -0.5em;
+}
+
+.card-progress-information button{
+    background-color: #FFDA62;
+    border: none;
+    border-radius: 30px;
+    color: #1FAA00;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+}

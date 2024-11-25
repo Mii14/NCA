@@ -1,0 +1,27 @@
+.supported-container{
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 2rem 0;
+}
+
+.supported-container h2{
+    font-size: 1.9em;
+    margin-bottom: 0;
+}
+
+.ICP{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -3%;
+    gap: 20px;
+}
+
+.ICP h1{
+    font-size: 4em;
+}
+
+.ICP img{
+    width: 80px;
+}

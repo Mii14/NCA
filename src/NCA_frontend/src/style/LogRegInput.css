@@ -1,0 +1,99 @@
+hr{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    height: 5px;
+    margin-bottom: 2em;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logReg-form-container{
+    background-color: #627A70;
+    padding: 1em 3em;
+    margin: 2em;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.form-h1{
+    text-align: center;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-left{
+    width: 50%;
+    font-size: 1.2em;
+    margin-top: -0.3em;
+}
+
+.input-left h2{
+    margin: 0;
+}
+
+.input-right{
+    width: 50%;
+}
+
+.input-wrap{
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-right img{
+    width: 12%;
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.input-right input{
+    border: none;
+    background-color: transparent;
+    color: white;
+    height: 50%;
+    width: 70%;
+    font-size: 1.2em;
+    padding: 0 2rem;
+}
+
+.input-right input:focus{
+    outline: transparent;
+}
+
+.input-right input::placeholder{
+    color: white;
+}
+
+.input-button{
+    border: none;
+    color: #627A70;
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.8em 1em;
+    cursor: pointer;
+}
+
+.input-link{
+    margin-top: -1em;
+    color: white;
+    text-decoration: underline;
+}
+
+.input-checkbox{
+    margin-top: 1em;
+}

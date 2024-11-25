@@ -1,0 +1,140 @@
+.cc-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Description */
+.cc-description-container{
+    width: 95%;
+    background-color: #D1E5D8;
+    border-radius: 30px;
+    font-size: 1.5em;
+}
+
+.cc-description-top{
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.cc-description-left{
+    font-size: 2em;
+    width: 70%;
+}
+
+.cc-description-left h1{
+    margin: 0;
+}
+
+.cc-description-right{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cc-description-right img{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    margin-right: -1em;
+}
+
+.cc-description-bottom{
+    background-color: #9DBFA9;
+    padding: 0.8em 2em;
+    border-radius: 30px;
+    text-align: justify;
+}
+
+
+/* Conversion Description */
+.cc-conversion-container{
+    background-color: #CFFDF8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2em 0em;
+    padding: 0.5em;
+    border-radius: 30px;
+    font-size: 2em;
+    gap: 1.1rem;
+}
+
+.cc-conversion-container img{
+    width: 15%;
+    object-fit: contain;
+}
+
+
+/* Conversion Input */
+.cc-input-container{
+    width: 70%;
+    background-color: #9DBFA9;
+    padding: 1em 2em;
+    border-radius: 30px;
+    font-size: 1.4em;
+}
+
+.cc-input-info{
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.cc-input-part{
+    width: 60%;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.cc-input-part h1{
+    margin: 0;
+}
+
+.cc-input-group{
+    width: 90%;
+    margin-bottom: -1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    gap: 10px;
+}
+
+.cc-white{
+    background-color: white;
+}
+
+.cc-input-part input{
+    height: 50px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.cc-button{
+    margin-top: 1em;
+    width: 35%;
+    padding: 0.5em 0;
+    font-size: 1.3em;
+    color: #627A70;
+    border: none;
+    background-color: #DFFFE1;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.cc-input-note{
+    font-size: 0.7em;
+    width: 50%;
+    text-align: justify;
+    margin-top: 3em;
+}

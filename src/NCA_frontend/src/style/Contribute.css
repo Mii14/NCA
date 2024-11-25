@@ -1,0 +1,118 @@
+/* Title */
+.contribute-title-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    border-bottom: 4px solid black;
+}
+
+.contribute-title-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contribute-title{
+    font-size: 5em;
+    margin: 0.5rem 0;
+}
+
+
+/* Monitor */
+.contribute-monitor{
+    padding-top: 2em;
+}
+
+/* Soon */
+.contribute-graph img{
+    width: 100%;
+    object-fit: contain;
+    border: 1px solid black;
+}
+
+
+/* Form Input */
+.contribute-form{
+    background-image: linear-gradient(#D1FABC, #ABC59E, #85907F);
+    border-radius: 30px;
+    padding: 2rem;
+    padding-top: 0.1rem;
+}
+
+.contribute-form-input{
+    width: 100%;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contribute-label{
+    width: 20%;
+    padding-right: 1.5rem;
+    font-weight: bold;
+}
+
+.contribute-label-active{
+    color: red;
+    font-weight: bolder;
+}
+
+.contribute-form-input input, .contribute-form-input select{
+    width: 70%;
+    padding: 0.6rem;
+    border-radius: 10px;
+}
+
+.contribute-form-input select{
+    width: 72%;
+}
+
+.contribute-form-description{
+    width: 33%;
+    font-size: 0.7em;
+}
+
+.contribute-button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contribute-button{
+    padding: 0.8rem;
+    background-color: #222D29;
+    color: white;
+    font-weight: bold;
+    width: 12%;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* Action */
+.action-title{
+    text-decoration: underline;
+    font-size: 3.5rem;
+    margin-bottom: 2em;
+}
+
+.action-desc{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.action-pair{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    margin: 2em;
+    margin-left: 0;
+    justify-content: space-evenly;
+}

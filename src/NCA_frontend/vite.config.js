@@ -7,8 +7,15 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '../../.env' });
 
 export default defineConfig({
+  base: '/',
   build: {
+    rollupOptions:{
+      external: ['react-query'],
+    },
+    assetsDir: 'assets',
     emptyOutDir: true,
+    outdir: 'dist',
+    sourcemap: true,
   },
   optimizeDeps: {
     esbuildOptions: {
@@ -18,6 +25,12 @@ export default defineConfig({
     },
   },
   server: {
+    cache: false,
+    open: true,
+    cors: true,
+    watch:{
+      usePolling: true,
+    },
     proxy: {
       "/api": {
         target: "http://127.0.0.1:4943",
@@ -33,10 +46,12 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: "declarations",
-        replacement: fileURLToPath(
-          new URL("../declarations", import.meta.url)
-        ),
+        find: 'declarations',
+        replacement: fileURLToPath(new URL('../declarations', import.meta.url)),
+      },
+      {
+        find: 'react-query',
+        replacement: '@tanstack/react-query',
       },
     ],
   },
